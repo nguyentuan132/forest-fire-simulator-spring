@@ -19,8 +19,6 @@ public class ForestFireController {
 
     @GetMapping("/simulate")
     public List<Forest> simulateFire() {
-        List<Forest> simulationSteps =
-         fireSimulationService.runSimulation();
-        return simulationSteps;
+        return fireSimulationService.runSimulation();
     }
 }
