@@ -91,9 +91,12 @@ Pour démarrer rapidement l'application avec Spring Boot et tester la simulation
 mvn clean spring-boot:run
 ```
 
-- Cela va lancer le serveur HTTP sur le port 8080. 
+- Cette commande démarre le serveur HTTP sur le port 8080. 
+- Le résultat de la simulation peut être récupéré via l'API à l'adresse /api/simulation/simulate en envoyant une requête HTTP GET.
 
 ### Configuration de la simulation
+- Le fichier de configuration par défaut de l'application est application.properties. Pour modifier les paramètres de la simulation (tels que la taille de la forêt, les positions initiales du feu et la probabilité de propagation du feu), vous devez éditer ce fichier.
+# Exemple de configuration dans application.properties :
 
 - `simulation.height=20` : définit la hauteur de la grille (forêt) à 20.
 - `simulation.width=20` : définit la largeur de la grille (forêt) à 20.
